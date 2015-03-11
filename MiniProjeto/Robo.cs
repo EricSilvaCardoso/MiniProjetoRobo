@@ -5,8 +5,11 @@ namespace MiniProjeto
 {
     public class Robo
     {
+        public Status status { get; set; }
+
         public void Andar(bool Andando)
         {
+            
             if (Andando)
                 Console.WriteLine("O Robo esta andando por 15 segundos");
             Thread.Sleep(TimeSpan.FromSeconds(15));

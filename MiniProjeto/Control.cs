@@ -16,12 +16,13 @@ namespace MiniProjeto
 
         public void ExecuteComandos()
         {
-            Console.WriteLine("Comando(s) executado(s) com sucesso.");
+            Console.WriteLine("Executando Comando(s).");
             while(comandos.Count > 0)
             {
                 Comandos comando = comandos.Dequeue();
                 comando.Executar(); 
             }
+            Console.WriteLine("Comando(s) executado(s) com sucesso.");
         }
     }
 }
