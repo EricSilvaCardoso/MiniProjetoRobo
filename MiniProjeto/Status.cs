@@ -8,6 +8,9 @@ namespace MiniProjeto
 {
     public enum Status
     {
-        
+        Pronto = 1,
+        Ocupado = 2,
+        Recuperando = 3,
+        Cheio = 4
     }
 }
