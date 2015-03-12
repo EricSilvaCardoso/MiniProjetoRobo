@@ -6,7 +6,6 @@ namespace MiniProjeto
     public class Robo
     {
         public Status status { get; set; }
-
         public void Andar(bool Andando)
         {
             

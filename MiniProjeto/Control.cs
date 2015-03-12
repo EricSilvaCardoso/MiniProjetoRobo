@@ -9,6 +9,7 @@ namespace MiniProjeto
     public class Control
     {
         public Queue<Comandos> comandos;
+
         public Control()
         {
             comandos = new Queue<Comandos>();   

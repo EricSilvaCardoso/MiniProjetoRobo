@@ -21,7 +21,7 @@ namespace MiniProjeto
             {
                 if (script[i] == "A")
                 {
-                     ComandoAndar andar = new ComandoAndar(robo);
+                    ComandoAndar andar = new ComandoAndar(robo);
                         andar.Andando = true;
                         controle.comandos.Enqueue(andar);
                 }
@@ -31,15 +31,15 @@ namespace MiniProjeto
                     ComandoProcurar procurar = new ComandoProcurar(robo);
                         procurar.Procurando = true;
                         controle.comandos.Enqueue(procurar);
+
+                        ComandoExtrair extrair = new ComandoExtrair(robo);
+                        extrair.Extraindo = true;
+                        controle.comandos.Enqueue(extrair);
                 }
+               
+                    
+             
             }
-            
-
-          
-
-            //ComandoExtrair extrair = new ComandoExtrair(robo);
-            //extrair.Extraindo = true;
-            //controle.comandos.Enqueue(extrair);
 
             controle.ExecuteComandos();
 
